@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #30343F;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER  ------------------ */
+
+.title-and-settings {
+    background-color: #191E2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 13px 0 5px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 13px 0 3px;
+}
+
+li {
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 0px 3px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+li i {
+    margin-right: 2px;
+}
+
+/* USER INTERACTION ------------ */
+
+/* Hover ---- */
+
+.is-hover:hover {
+    background-color: #4E5565;
+}
