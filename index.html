@@ -9,11 +9,14 @@
     <script src="https://kit.fontawesome.com/c89c9de4f7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="title-and-settings">
+    <header class="title-and-settings flex-container">
         <h1>Meme Generator</h1>
         <ul>
             <li class="is-hover">
@@ -30,6 +33,65 @@
             </li>
         </ul>
     </header>
+    <main class="flex-container">
+        <section class="meme-container">
+            <div class="text-container top-text flex-container">
+                <h2>TOP TEXT</h2>
+            </div>
+            <div class="image-container"></div>
+            <div class="text-container bottom-text flex-container">
+                <h2>BOTTOM TEXT</h2>
+            </div>
+        </section>
+    </main>
+    <aside class="image-settings flex-container">
+        <h3>IMAGE</h3>
+        <form class="flex-container flex-start">
+            <label>
+                <h5>URL</h5>
+                <input type="text" id="image-url">
+            </label>
+            <label>
+                <h5>BACKGROUND</h5>
+                <div class="color-n-style flex-container">
+                    <div class="input-color flex-container">
+                        <input type="color" id="color-select"><span>#000000</span>
+                    </div>
+                    <select name="filter" id="filter-select">
+                        <option value="none">None</option>
+                        <option value="lighten">Lighten</option>
+                        <option value="darken">Darken</option>
+                        <option value="difference">Difference</option>
+                        <option value="luminosity">Luminosity</option>
+                        <option value="multiply">Multiply</option>
+                    </select>
+                </div>
+            </label>
+            <h5>FILTERS</h5>
+            <label for="bright-range">BRIGHTNESS</label>
+            <input type="range" id="bright-range">
+            <label for="opacity-range">OPACITY</label>
+            <input type="range" id="opacity-range">
+            <label for="contrast-range">CONTRAST</label>
+            <input type="range" id="contrast-range">
+            <label for="blur-range">BLUR</label>
+            <input type="range" id="blur-range">
+            <label for="gray-range">GRAYSCALE</label>
+            <input type="range" id="gray-range">
+            <label for="sepia-range">SEPIA</label>
+            <input type="range" id="sepia-range">
+            <label for="hue-range">HUE</label>
+            <input type="range" id="hue-range">
+            <label for="saturation-range">SATURATION</label>
+            <input type="range" id="saturation-range">
+            <label for="negative-range">NEGATIVE</label>
+            <input type="range" id="negative-range">
+            <button class="reset">Reset filters</button>
+        </form>
+    </aside>
+    <aside class="text-settings">
+
+    </aside>
     <script src="script/script.js"></script>
 </body>
 
