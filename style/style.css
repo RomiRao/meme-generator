@@ -18,6 +18,7 @@ body {
     align-items: center;
 }
 
+
 /* HEADER  ---------------------------- */
 
 .title-and-settings {
@@ -92,47 +93,87 @@ h2 {
 }
 
 h3 {
-    margin: 30px 0px 0px;
+    margin: 20px 0px 0px;
+}
+
+h5, label, input[type='range'] {
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 100%;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+form div {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+/*input custumize - image */
+
+input, select, .input-color, form button  {
+    color: white;
+    width: 100%;
+    height: 35px;
+    background-color: #393E49;
+    border: none;
+    border-radius: 3px;
+}
+
+select {
+    margin-left: 10px;
 }
 
 .color-n-style {
     flex-direction: row;
 }
 
-form {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
+.relative-container {
+    position: relative;
 }
 
-/*input custumize - image */
-
-label {
-    width: 100%;
+form button {
+    width: 150px;
+    font-size: 15px;
+    margin-top: 20px
 }
 
-input, select {
-    color: white;
-    width: 100%;
-    background-color: #393E49;
-    border: none;
-    border-radius: 2px;
-    padding: 10px;
-    margin: 5px 0px;
+span {
+    position: absolute;
+    top: 30%;
+    right: 20px;
 }
 
-.input-color {
-    padding: 1px 10px;
-    flex-direction: row;
-    width: 50%;
+/* SLIDERS */
+
+input[type='range'] {
+    height: 0;
 }
 
-#color-select {
-    width: 10px;
-    clip-path: circle(50%);
+input[type='range'], input[type='range']::-webkit-slider-runnable-track, input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
     background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: -4px;
+    cursor: pointer;
 }
 
+input[type=range]::-webkit-slider-runnable-track {
+    background-color:#5A5D68;
+    height: 7px;
+    border-radius: 3px;
+    width: 100%;
+}
 
 /* USER INTERACTION ------------------- */
 
@@ -140,4 +181,11 @@ input, select {
 
 .is-hover:hover {
     background-color: #4E5565;
+}
+
+/* Focus ---- */
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    outline: none;
+    background-color: #9E9E9E;
 }

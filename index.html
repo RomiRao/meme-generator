@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!------ Small header to present the project ----->
     <header class="title-and-settings flex-container">
         <h1>Meme Generator</h1>
         <ul>
@@ -33,6 +34,7 @@
             </li>
         </ul>
     </header>
+    <!----- Meme content to be download ----->
     <main class="flex-container">
         <section class="meme-container">
             <div class="text-container top-text flex-container">
@@ -44,51 +46,58 @@
             </div>
         </section>
     </main>
+    <!-------- Settings to apply to the image ------->
+    <!-- Image settings form -->
     <aside class="image-settings flex-container">
         <h3>IMAGE</h3>
         <form class="flex-container flex-start">
-            <label>
+            <div>
                 <h5>URL</h5>
-                <input type="text" id="image-url">
-            </label>
-            <label>
+                <label for="image-url"></label>
+                <input type="text" id="image-url" class="is-hover">
+            </div>
+            <div>
                 <h5>BACKGROUND</h5>
                 <div class="color-n-style flex-container">
-                    <div class="input-color flex-container">
-                        <input type="color" id="color-select"><span>#000000</span>
-                    </div>
-                    <select name="filter" id="filter-select">
-                        <option value="none">None</option>
-                        <option value="lighten">Lighten</option>
-                        <option value="darken">Darken</option>
-                        <option value="difference">Difference</option>
-                        <option value="luminosity">Luminosity</option>
-                        <option value="multiply">Multiply</option>
-                    </select>
+                    <label class="relative-container">
+                        <input type="color" id="color-select" class="input-color flex-container"><span>#000000</span>
+                    </label>
+                        <select name="filter" id="filter-select" class="is-hover">
+                            <option value="none">None</option>
+                            <option value="lighten">Lighten</option>
+                            <option value="darken">Darken</option>
+                            <option value="difference">Difference</option>
+                            <option value="luminosity">Luminosity</option>
+                            <option value="multiply">Multiply</option>
+                        </select>
                 </div>
-            </label>
-            <h5>FILTERS</h5>
-            <label for="bright-range">BRIGHTNESS</label>
-            <input type="range" id="bright-range">
-            <label for="opacity-range">OPACITY</label>
-            <input type="range" id="opacity-range">
-            <label for="contrast-range">CONTRAST</label>
-            <input type="range" id="contrast-range">
-            <label for="blur-range">BLUR</label>
-            <input type="range" id="blur-range">
-            <label for="gray-range">GRAYSCALE</label>
-            <input type="range" id="gray-range">
-            <label for="sepia-range">SEPIA</label>
-            <input type="range" id="sepia-range">
-            <label for="hue-range">HUE</label>
-            <input type="range" id="hue-range">
-            <label for="saturation-range">SATURATION</label>
-            <input type="range" id="saturation-range">
-            <label for="negative-range">NEGATIVE</label>
-            <input type="range" id="negative-range">
+            </div>
+            <!----- Filters sliders ------>
+            <div>
+                <h5>FILTERS</h5>
+                <label for="bright-range">BRIGHTNESS</label>
+                <input type="range" class="slide-bar" id="bright-range" step="10" value="100">
+                <label for="opacity-range">OPACITY</label>
+                <input type="range" class="slide-bar" id="opacity-range" step="10" value="100">
+                <label for="contrast-range">CONTRAST</label>
+                <input type="range" class="slide-bar" id="contrast-range" value="0">
+                <label for="blur-range">BLUR</label>
+                <input type="range" class="slide-bar" id="blur-range" value="0">
+                <label for="gray-range">GRAYSCALE</label>
+                <input type="range" class="slide-bar" id="gray-range" value="0">
+                <label for="sepia-range">SEPIA</label>
+                <input type="range" class="slide-bar" id="sepia-range" value="0">
+                <label for="hue-range">HUE</label>
+                <input type="range" class="slide-bar" id="hue-range" value="0">
+                <label for="saturation-range">SATURATION</label>
+                <input type="range" class="slide-bar" id="saturation-range" value="0">
+                <label for="negative-range">NEGATIVE</label>
+                <input type="range" class="slide-bar" id="negative-range" step="10" value="0">
+            </div>
             <button class="reset">Reset filters</button>
         </form>
     </aside>
+    <!------ Text settings form ------->
     <aside class="text-settings">
 
     </aside>
