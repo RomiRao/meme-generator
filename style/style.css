@@ -81,7 +81,7 @@ h2 {
 .image-settings {
     background-color: #252935;
     position: absolute;
-    width: 16%;
+    width: 16.5%;
     right: 0;
     top: 0;
     justify-content: flex-start;
@@ -122,6 +122,7 @@ input, select, .input-color, form button  {
     background-color: #393E49;
     border: none;
     border-radius: 3px;
+    padding: 5px 8px;
 }
 
 select {
@@ -130,6 +131,9 @@ select {
 
 .color-n-style {
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 0px;
 }
 
 .relative-container {
@@ -143,15 +147,17 @@ form button {
 }
 
 span {
+    font-size: 13px;
     position: absolute;
-    top: 30%;
-    right: 20px;
+    top: 9px;
+    right: 12px;
 }
 
 /* SLIDERS */
 
 input[type='range'] {
     height: 0;
+    padding: 0;
 }
 
 input[type='range'], input[type='range']::-webkit-slider-runnable-track, input[type='range']::-webkit-slider-thumb {
@@ -170,9 +176,25 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-webkit-slider-runnable-track {
     background-color:#5A5D68;
-    height: 7px;
+    height: 6px;
     border-radius: 3px;
     width: 100%;
+}
+
+/* Color */
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    width: 22px;
+    height: 25px;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+    border-radius: 70%;
 }
 
 /* USER INTERACTION ------------------- */
