@@ -183,10 +183,6 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* Color */
 
-input[type="color"] {
-	-webkit-appearance: none;
-	border: none;
-}
 input[type="color"]::-webkit-color-swatch-wrapper {
     width: 22px;
     height: 25px;
