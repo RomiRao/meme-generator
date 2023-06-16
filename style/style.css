@@ -59,7 +59,7 @@ li i {
 }
 
 .text-container {
-    padding: 18px;
+    padding: 30px;
     background-color: white;
 }
 
@@ -72,13 +72,13 @@ li i {
 h2 {
     color: black;
     font-family: 'Anton', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
 }
 
 /* ASIDE/IMAGE SETTINGS -------------------------------------*/
 
-.image-settings {
+.image-settings, .text-settings {
     background-color: #252935;
     position: absolute;
     width: 16.5%;
@@ -93,7 +93,7 @@ h2 {
 }
 
 h3 {
-    margin: 20px 0px 0px;
+    margin: 30px 0 0;
 }
 
 h5, label, input[type='range'] {
@@ -108,9 +108,13 @@ form {
     padding: 15px;
 }
 
-form div {
+.panel-settings {
     width: 100%;
     margin: 10px 0px;
+}
+
+.url-container {
+    margin: 0;
 }
 
 /*input custumize - image */
@@ -192,6 +196,10 @@ input[type="color"]::-webkit-color-swatch {
 	border: none;
     border-radius: 70%;
 }
+
+/* ASIDE/TEXT SETTINGS -------------------------------------*/
+
+
 
 /* USER INTERACTION ------------------- */
 

@@ -51,29 +51,29 @@
     <aside class="image-settings flex-container">
         <h3>IMAGE</h3>
         <form class="flex-container flex-start">
-            <div>
+            <section class="url-container panel-settings">
                 <h5>URL</h5>
                 <label for="image-url"></label>
                 <input type="text" id="image-url" class="is-hover">
-            </div>
-            <div>
+            </section>
+            <section class="panel-settings">
                 <h5>BACKGROUND</h5>
                 <div class="color-n-style flex-container">
                     <label class="relative-container">
                         <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
                     </label>
-                        <select name="filter" id="filter-select" class="is-hover">
-                            <option value="none">None</option>
-                            <option value="lighten">Lighten</option>
-                            <option value="darken">Darken</option>
-                            <option value="difference">Difference</option>
-                            <option value="luminosity">Luminosity</option>
-                            <option value="multiply">Multiply</option>
-                        </select>
+                    <select name="filter" id="filter-select" class="is-hover">
+                        <option value="none">None</option>
+                        <option value="lighten">Lighten</option>
+                        <option value="darken">Darken</option>
+                        <option value="difference">Difference</option>
+                        <option value="luminosity">Luminosity</option>
+                        <option value="multiply">Multiply</option>
+                    </select>
                 </div>
-            </div>
+            </section>
             <!----- Filters sliders ------>
-            <div>
+            <section class="panel-settings">
                 <h5>FILTERS</h5>
                 <label for="bright-range">BRIGHTNESS</label>
                 <input type="range" class="slide-bar" id="bright-range" step="10" value="100">
@@ -93,13 +93,74 @@
                 <input type="range" class="slide-bar" id="saturation-range" value="0">
                 <label for="negative-range">NEGATIVE</label>
                 <input type="range" class="slide-bar" id="negative-range" step="10" value="0">
-            </div>
+            </section>
             <button class="reset">Reset filters</button>
         </form>
     </aside>
     <!------ Text settings form ------->
-    <aside class="text-settings">
-
+    <aside class="text-settings flex-container">
+        <h3>TEXT</h3>
+        <form class="flex-container flex-start">
+            <section class="panel-settings">
+                <h5>TOP</h5>
+                <textarea name="top-text" id="top-text" rows="2">TOP TEXT</textarea>
+                <div class="flex-container">
+                    <input type="checkbox" id="check-top-text">
+                    <label for="check-top-text">Without top text</label>
+                </div>
+            </section>
+            <section class="panel-settings">
+                <h5>BOTTOM</h5>
+                <textarea name="bottom-text" id="bottom-text" rows="2">TOP TEXT</textarea>
+                <input type="checkbox" id="check-bottom-text">
+                <label for="check-bottom-text">Without bottom text</label>
+            </section>
+            <section class="panel-settings">
+                <h5>FONT</h5>
+                <select name="" id=""></select>
+                <input type="number">
+                <section class="button-container flex-container">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </section>
+            </section>
+            <section class="panel-settings flex-container">
+            </section>
+            <div class="flex-container">
+                <h5>COLOR</h5>
+                <label class="relative-container">
+                    <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
+                </label>
+            </div>
+            <div class="flex-container">
+                <h5>BACKGROUND</h5>
+                <label class="relative-container">
+                    <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
+                </label>
+            </div>
+            <div class="flex-container">
+                <input type="checkbox" id="check-back-text">
+                <label for="check-back-text">Transparent background</label>
+            </div>
+            </section>
+            <section class="panel-settings">
+                <h5>BORDER</h5>
+                <div class="button-container">
+                    <button>None</button>
+                    <button>Light</button>
+                    <button>Dark</button>
+                </div>
+            </section>
+            <section class="panel-settings">
+                <label for="space-letters">SPACING</label>
+                <input type="number" id="space-letters">
+            </section>
+            <section class="panel-settings">
+                <label for="leading-letters">LEADING</label>
+                <select name="leading" id="leading-letters"></select>
+            </section>
+        </form>
     </aside>
     <script src="script/script.js"></script>
 </body>
