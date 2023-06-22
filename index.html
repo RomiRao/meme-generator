@@ -20,15 +20,15 @@
     <header class="title-and-settings flex-container">
         <h1>Meme Generator</h1>
         <ul>
-            <li class="is-hover">
+            <li class="is-hover is-cursor">
                 <i class="fa-solid fa-file-image"></i>
                 Image
             </li>
-            <li class="is-hover">
+            <li class="is-hover is-cursor">
                 <i class="fa-solid fa-a"></i>
                 Text
             </li>
-            <li class="is-hover">
+            <li class="is-hover is-cursor">
                 <i class="fa-regular fa-lightbulb"></i>
                 Dark mode
             </li>
@@ -47,6 +47,100 @@
         </section>
     </main>
     <!-------- Settings to apply to the image ------->
+        <!------ Text settings form ------->
+        <aside class="text-settings flex-container">
+            <h3>TEXT</h3>
+            <form class="flex-container flex-start">
+                <section class="panel-settings">
+                    <h5>TOP</h5>
+                    <textarea name="top-text" id="top-text" rows="2" class="is-hover">TOP TEXT</textarea>
+                    <div class="flex-container row-container">
+                        <input type="checkbox" id="check-top-text" class="checkbox-style">
+                        <label for="check-top-text" class="label-checkbox">Without top text</label>
+                    </div>
+                </section>
+                <section class="panel-settings">
+                    <h5>BOTTOM</h5>
+                    <textarea name="bottom-text" id="bottom-text" rows="2" class="is-hover">TOP TEXT</textarea>
+                    <div class="flex-container row-container">
+                        <input type="checkbox" id="check-bottom-text" class="checkbox-style">
+                        <label for="check-bottom-text" class="label-checkbox">Without bottom text</label>
+                    </div>
+                </section>
+                <!-- FONT STRUCTURE -------------->
+                <section class="panel-settings flex-container">
+                    <h5>FONT</h5>
+                    <select name="font" id="font-selector" class="is-hover">
+                        <option value="arial">Arial</option>
+                        <option value="arialBlack">Arial Black</option>
+                        <option value="american">American Typewriter</option>
+                        <option value="andale">Andale Mono</option>
+                        <option value="comicSans">Comic Sans MS</option>
+                        <option value="helvetica">Helvetica</option>
+                        <option value="impact" selected>Impact</option>
+                        <option value="verdana">Verdana</option>
+                        <option value="timesnew">Times New Roman</option>
+                    </select>
+                    <div class="font-container flex-container row-container between-container">
+                        <input type="number" value="40" class="is-hover">
+                    <section class="button-container flex-container row-container between-container">
+                        <button class="justify-button is-hover is-cursor">
+                            <i class="fa-solid fa-align-left"></i>
+                        </button>
+                        <button class="justify-button is-hover is-cursor">
+                            <i class="fa-solid fa-align-center"></i>
+                        </button>
+                        <button class="justify-button is-hover is-cursor">
+                            <i class="fa-solid fa-align-left"></i>
+                        </button>
+                    </section>
+                    </div>
+                </section>
+                <section class="panel-settings flex-container flex-start">
+                <div class="flex-container row-container">
+                    <div class="flex-container between-container">
+                        <h5>COLOR</h5>
+                        <label class="relative-container">
+                            <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
+                        </label>
+                    </div>
+                    <div class="flex-container background-letter">
+                        <h5>BACKGROUND</h5>
+                        <label class="relative-container">
+                            <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex-container row-container">
+                    <input type="checkbox" id="check-back-text" class="checkbox-style">
+                    <label for="check-back-text" class="label-checkbox">Transparent background</label>
+                </div>
+                </section>
+                <section class="panel-settings">
+                    <h5>BORDER</h5>
+                    <div class="button-container flex-container row-container between-container">
+                        <button class="justify-button is-hover is-cursor">None</button>
+                        <button class="justify-button is-hover is-cursor">Light</button>
+                        <button class="justify-button is-hover is-cursor">Dark</button>
+                    </div>
+                </section>
+                <section class="panel-settings">
+                    <label for="space-letters">SPACING</label>
+                    <input type="number" value="35" id="space-letters" class="is-hover">
+                </section>
+                <section class="panel-settings">
+                    <label for="leading-letters">LEADING</label>
+                    <select name="leading" id="leading-letters" class="is-hover">
+                        <option value="0.8">0.8</option>
+                        <option value="1">1</option>
+                        <option value="1.2" selected>1.2</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2">2</option>
+                        <option value="2.5">2.5</option>
+                    </select>
+                </section>
+            </form>
+        </aside>
     <!-- Image settings form -->
     <aside class="image-settings flex-container">
         <h3>IMAGE</h3>
@@ -58,11 +152,11 @@
             </section>
             <section class="panel-settings">
                 <h5>BACKGROUND</h5>
-                <div class="color-n-style flex-container">
+                <div class="color-n-style flex-container flex-start row-container">
                     <label class="relative-container">
                         <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
                     </label>
-                    <select name="filter" id="filter-select" class="is-hover">
+                    <select name="filter" id="filter-select" class="is-hover is-cursor">
                         <option value="none">None</option>
                         <option value="lighten">Lighten</option>
                         <option value="darken">Darken</option>
@@ -95,71 +189,6 @@
                 <input type="range" class="slide-bar" id="negative-range" step="10" value="0">
             </section>
             <button class="reset">Reset filters</button>
-        </form>
-    </aside>
-    <!------ Text settings form ------->
-    <aside class="text-settings flex-container">
-        <h3>TEXT</h3>
-        <form class="flex-container flex-start">
-            <section class="panel-settings">
-                <h5>TOP</h5>
-                <textarea name="top-text" id="top-text" rows="2">TOP TEXT</textarea>
-                <div class="flex-container">
-                    <input type="checkbox" id="check-top-text">
-                    <label for="check-top-text">Without top text</label>
-                </div>
-            </section>
-            <section class="panel-settings">
-                <h5>BOTTOM</h5>
-                <textarea name="bottom-text" id="bottom-text" rows="2">TOP TEXT</textarea>
-                <input type="checkbox" id="check-bottom-text">
-                <label for="check-bottom-text">Without bottom text</label>
-            </section>
-            <section class="panel-settings">
-                <h5>FONT</h5>
-                <select name="" id=""></select>
-                <input type="number">
-                <section class="button-container flex-container">
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                </section>
-            </section>
-            <section class="panel-settings flex-container">
-            </section>
-            <div class="flex-container">
-                <h5>COLOR</h5>
-                <label class="relative-container">
-                    <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
-                </label>
-            </div>
-            <div class="flex-container">
-                <h5>BACKGROUND</h5>
-                <label class="relative-container">
-                    <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
-                </label>
-            </div>
-            <div class="flex-container">
-                <input type="checkbox" id="check-back-text">
-                <label for="check-back-text">Transparent background</label>
-            </div>
-            </section>
-            <section class="panel-settings">
-                <h5>BORDER</h5>
-                <div class="button-container">
-                    <button>None</button>
-                    <button>Light</button>
-                    <button>Dark</button>
-                </div>
-            </section>
-            <section class="panel-settings">
-                <label for="space-letters">SPACING</label>
-                <input type="number" id="space-letters">
-            </section>
-            <section class="panel-settings">
-                <label for="leading-letters">LEADING</label>
-                <select name="leading" id="leading-letters"></select>
-            </section>
         </form>
     </aside>
     <script src="script/script.js"></script>
