@@ -206,6 +206,10 @@ input[type="color"]::-webkit-color-swatch {
 
 /* ASIDE/TEXT SETTINGS -------------------------------------*/
 
+.text-settings {
+    left: 0;
+}
+
 .checkbox-style {
     width: 13px;
 }
@@ -227,7 +231,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .justify-button {
-    width: 90%;
+    width: 100%;
     margin: 0 0 0 5px;
 }
 
