@@ -206,10 +206,6 @@ input[type="color"]::-webkit-color-swatch {
 
 /* ASIDE/TEXT SETTINGS -------------------------------------*/
 
-.text-settings {
-    left: 0;
-}
-
 .checkbox-style {
     width: 13px;
 }
