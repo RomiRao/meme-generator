@@ -19,7 +19,7 @@
     <!------ Small header to present the project ----->
     <header class="title-and-settings flex-container">
         <h1>Meme Generator</h1>
-        <ul>
+        <ul class="flex-container row-container">
             <li class="is-hover is-cursor">
                 <i class="fa-solid fa-file-image"></i>
                 Image
@@ -45,10 +45,14 @@
                 <h2>BOTTOM TEXT</h2>
             </div>
         </section>
+        <button class="download-button">
+            <i class="fa-solid fa-download"></i>
+            Download meme
+        </button>
     </main>
     <!-------- Settings to apply to the image ------->
         <!------ Text settings form ------->
-        <aside class="text-settings flex-container">
+        <!-- <aside class="text-settings flex-container">
             <h3>TEXT</h3>
             <form class="flex-container flex-start">
                 <section class="panel-settings">
@@ -66,9 +70,9 @@
                         <input type="checkbox" id="check-bottom-text" class="checkbox-style">
                         <label for="check-bottom-text" class="label-checkbox">Without bottom text</label>
                     </div>
-                </section>
+                </section> -->
                 <!-- FONT STRUCTURE -------------->
-                <section class="panel-settings flex-container">
+                <!-- <section class="panel-settings flex-container">
                     <h5>FONT</h5>
                     <select name="font" id="font-selector" class="is-hover">
                         <option value="arial">Arial</option>
@@ -140,9 +144,9 @@
                     </select>
                 </section>
             </form>
-        </aside>
+        </aside> -->
     <!-- Image settings form -->
-    <aside class="image-settings flex-container">
+    <!-- <aside class="image-settings flex-container">
         <h3>IMAGE</h3>
         <form class="flex-container flex-start">
             <section class="url-container panel-settings">
@@ -165,9 +169,9 @@
                         <option value="multiply">Multiply</option>
                     </select>
                 </div>
-            </section>
+            </section> -->
             <!----- Filters sliders ------>
-            <section class="panel-settings">
+            <!-- <section class="panel-settings">
                 <h5>FILTERS</h5>
                 <label for="bright-range">BRIGHTNESS</label>
                 <input type="range" class="slide-bar" id="bright-range" step="10" value="100">
@@ -190,7 +194,7 @@
             </section>
             <button class="reset">Reset filters</button>
         </form>
-    </aside>
+    </aside> -->
     <script src="script/script.js"></script>
 </body>
 
