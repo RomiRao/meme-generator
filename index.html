@@ -37,9 +37,9 @@
     <!----- Meme content to be download ----->
     <main class="flex-container">
         <section class="meme-container flex-container">
-            <h2 class="meme-text" id="top-text">TOP TEXT</h2>
+            <h2 class="meme-text" id="top-text-cont">TOP TEXT</h2>
             <div class="image-container"></div>
-            <h2 class="meme-text" id="bottom-text">BOTTOM TEXT</h2>
+            <h2 class="meme-text" id="bottom-text-cont">BOTTOM TEXT</h2>
         </section>
         <section class="download-section">
             <button class="download-button">
@@ -49,8 +49,58 @@
         </section>
     </main>
     <!-------- Settings to apply to the image ------->
+    <!-- Image settings form -->
+    <aside class="image-settings flex-container">
+        <h3>IMAGE</h3>
+        <form class="flex-container flex-start">
+            <section class="url-container panel-settings">
+                <h5>URL</h5>
+                <label for="image-url"></label>
+                <input type="text" id="image-url" class="is-hover">
+            </section>
+            <section class="panel-settings">
+                <h5>BACKGROUND</h5>
+                <div class="color-n-style flex-container flex-start row-container">
+                    <label class="relative-container">
+                        <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
+                    </label>
+                    <select name="filter" id="filter-select" class="is-hover is-cursor">
+                        <option value="none">None</option>
+                        <option value="lighten">Lighten</option>
+                        <option value="darken">Darken</option>
+                        <option value="difference">Difference</option>
+                        <option value="luminosity">Luminosity</option>
+                        <option value="multiply">Multiply</option>
+                    </select>
+                </div>
+            </section>
+    <!----- Filters sliders ------>
+    <section class="panel-settings">
+                <h5>FILTERS</h5>
+                <label for="bright-range">BRIGHTNESS</label>
+                <input type="range" class="slide-bar" id="bright-range" step="10" value="100">
+                <label for="opacity-range">OPACITY</label>
+                <input type="range" class="slide-bar" id="opacity-range" step="10" value="100">
+                <label for="contrast-range">CONTRAST</label>
+                <input type="range" class="slide-bar" id="contrast-range" value="0">
+                <label for="blur-range">BLUR</label>
+                <input type="range" class="slide-bar" id="blur-range" value="0">
+                <label for="gray-range">GRAYSCALE</label>
+                <input type="range" class="slide-bar" id="gray-range" value="0">
+                <label for="sepia-range">SEPIA</label>
+                <input type="range" class="slide-bar" id="sepia-range" value="0">
+                <label for="hue-range">HUE</label>
+                <input type="range" class="slide-bar" id="hue-range" value="0">
+                <label for="saturation-range">SATURATION</label>
+                <input type="range" class="slide-bar" id="saturation-range" value="0">
+                <label for="negative-range">NEGATIVE</label>
+                <input type="range" class="slide-bar" id="negative-range" step="10" value="0">
+            </section>
+            <button class="reset">Reset filters</button>
+        </form>
+    </aside>
     <!------ Text settings form ------->
-    <!-- <aside class="text-settings flex-container">
+    <aside class="text-settings flex-container">
             <h3>TEXT</h3>
             <form class="flex-container flex-start">
                 <section class="panel-settings">
@@ -63,14 +113,14 @@
                 </section>
                 <section class="panel-settings">
                     <h5>BOTTOM</h5>
-                    <textarea name="bottom-text" id="bottom-text" rows="2" class="is-hover">TOP TEXT</textarea>
+                    <textarea name="bottom-text" id="bottom-text" rows="2" class="is-hover">BOTTOM TEXT</textarea>
                     <div class="flex-container row-container">
                         <input type="checkbox" id="check-bottom-text" class="checkbox-style">
                         <label for="check-bottom-text" class="label-checkbox">Without bottom text</label>
                     </div>
-                </section> -->
+                </section>
     <!-- FONT STRUCTURE -------------->
-    <!-- <section class="panel-settings flex-container">
+    <section class="panel-settings flex-container">
                     <h5>FONT</h5>
                     <select name="font" id="font-selector" class="is-hover">
                         <option value="arial">Arial</option>
@@ -142,57 +192,7 @@
                     </select>
                 </section>
             </form>
-        </aside> -->
-    <!-- Image settings form -->
-    <!-- <aside class="image-settings flex-container">
-        <h3>IMAGE</h3>
-        <form class="flex-container flex-start">
-            <section class="url-container panel-settings">
-                <h5>URL</h5>
-                <label for="image-url"></label>
-                <input type="text" id="image-url" class="is-hover">
-            </section>
-            <section class="panel-settings">
-                <h5>BACKGROUND</h5>
-                <div class="color-n-style flex-container flex-start row-container">
-                    <label class="relative-container">
-                        <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
-                    </label>
-                    <select name="filter" id="filter-select" class="is-hover is-cursor">
-                        <option value="none">None</option>
-                        <option value="lighten">Lighten</option>
-                        <option value="darken">Darken</option>
-                        <option value="difference">Difference</option>
-                        <option value="luminosity">Luminosity</option>
-                        <option value="multiply">Multiply</option>
-                    </select>
-                </div>
-            </section> -->
-    <!----- Filters sliders ------>
-    <!-- <section class="panel-settings">
-                <h5>FILTERS</h5>
-                <label for="bright-range">BRIGHTNESS</label>
-                <input type="range" class="slide-bar" id="bright-range" step="10" value="100">
-                <label for="opacity-range">OPACITY</label>
-                <input type="range" class="slide-bar" id="opacity-range" step="10" value="100">
-                <label for="contrast-range">CONTRAST</label>
-                <input type="range" class="slide-bar" id="contrast-range" value="0">
-                <label for="blur-range">BLUR</label>
-                <input type="range" class="slide-bar" id="blur-range" value="0">
-                <label for="gray-range">GRAYSCALE</label>
-                <input type="range" class="slide-bar" id="gray-range" value="0">
-                <label for="sepia-range">SEPIA</label>
-                <input type="range" class="slide-bar" id="sepia-range" value="0">
-                <label for="hue-range">HUE</label>
-                <input type="range" class="slide-bar" id="hue-range" value="0">
-                <label for="saturation-range">SATURATION</label>
-                <input type="range" class="slide-bar" id="saturation-range" value="0">
-                <label for="negative-range">NEGATIVE</label>
-                <input type="range" class="slide-bar" id="negative-range" step="10" value="0">
-            </section>
-            <button class="reset">Reset filters</button>
-        </form>
-    </aside> -->
+        </aside>
     <script src="script/script.js"></script>
 </body>
 

@@ -298,7 +298,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 @media(max-width:550px) {
 
     .meme-container {
-        height: 500px;
+        height: 470px;
     }
 
     .meme-text {
