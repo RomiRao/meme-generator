@@ -36,23 +36,21 @@
     </header>
     <!----- Meme content to be download ----->
     <main class="flex-container">
-        <section class="meme-container">
-            <div class="text-container top-text flex-container">
-                <h2>TOP TEXT</h2>
-            </div>
+        <section class="meme-container flex-container">
+            <h2 class="meme-text" id="top-text">TOP TEXT</h2>
             <div class="image-container"></div>
-            <div class="text-container bottom-text flex-container">
-                <h2>BOTTOM TEXT</h2>
-            </div>
+            <h2 class="meme-text" id="bottom-text">BOTTOM TEXT</h2>
         </section>
-        <button class="download-button">
-            <i class="fa-solid fa-download"></i>
-            Download meme
-        </button>
+        <section class="download-section">
+            <button class="download-button">
+                <i class="fa-solid fa-download"></i>
+                Download meme
+            </button>
+        </section>
     </main>
     <!-------- Settings to apply to the image ------->
-        <!------ Text settings form ------->
-        <!-- <aside class="text-settings flex-container">
+    <!------ Text settings form ------->
+    <!-- <aside class="text-settings flex-container">
             <h3>TEXT</h3>
             <form class="flex-container flex-start">
                 <section class="panel-settings">
@@ -71,8 +69,8 @@
                         <label for="check-bottom-text" class="label-checkbox">Without bottom text</label>
                     </div>
                 </section> -->
-                <!-- FONT STRUCTURE -------------->
-                <!-- <section class="panel-settings flex-container">
+    <!-- FONT STRUCTURE -------------->
+    <!-- <section class="panel-settings flex-container">
                     <h5>FONT</h5>
                     <select name="font" id="font-selector" class="is-hover">
                         <option value="arial">Arial</option>
@@ -170,8 +168,8 @@
                     </select>
                 </div>
             </section> -->
-            <!----- Filters sliders ------>
-            <!-- <section class="panel-settings">
+    <!----- Filters sliders ------>
+    <!-- <section class="panel-settings">
                 <h5>FILTERS</h5>
                 <label for="bright-range">BRIGHTNESS</label>
                 <input type="range" class="slide-bar" id="bright-range" step="10" value="100">
