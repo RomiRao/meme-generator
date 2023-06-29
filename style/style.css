@@ -11,7 +11,6 @@ body {
     color: white;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -72,14 +71,16 @@ li i {
 /* MAIN/IMAGE ----------------------------------*/
 
 main {
-    height: 100%;
+    flex-grow: 1;
 }
 
 .meme-container {
     width: 90%;
     max-width: 600px;
     background-color: black;
-    height: 600px;
+    height: 90vmin;
+    max-height: 600px;
+    flex-grow: 1;
 }
 
 .image-container {
@@ -93,8 +94,9 @@ main {
     font-weight: 800;
     font-size: 50px;
     width: 100%;
+    font-size: 3vw;
     text-align: center;
-    padding: 20px 30px;
+    padding: 17px 30px;
     background-color: white;
 }
 
@@ -124,6 +126,7 @@ div {
     right: 0;
     top: 0;
     justify-content: flex-start;
+    display: none;
 }
 
 h3 {
@@ -295,41 +298,3 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     }
 }
 
-@media(max-width:550px) {
-
-    .meme-container {
-        height: 470px;
-    }
-
-    .meme-text {
-        font-size: 30px;
-        padding: 15px;
-    }
-
-}
-
-@media(max-width:400px) {
-
-    .meme-container {
-        height: 370px;
-    }
-
-    .meme-text {
-        font-size: 25px;
-        padding: 10px;
-    }
-
-}
-
-
-@media(max-width:300px) {
-
-    .meme-container {
-        height: 270px;
-    }
-
-    .meme-text {
-        font-size: 15px;
-    }
-
-}
