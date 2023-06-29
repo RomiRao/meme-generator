@@ -78,7 +78,7 @@ main {
     width: 90%;
     max-width: 600px;
     background-color: black;
-    height: 90vmin;
+    height: 100vmin;
     max-height: 600px;
     flex-grow: 1;
 }
@@ -92,9 +92,8 @@ main {
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 800;
-    font-size: 50px;
     width: 100%;
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
     padding: 17px 30px;
     background-color: white;
@@ -126,7 +125,6 @@ div {
     right: 0;
     top: 0;
     justify-content: flex-start;
-    display: none;
 }
 
 h3 {
@@ -232,6 +230,10 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 /* ASIDE/TEXT SETTINGS -------------------------------------*/
+
+.text-settings {
+    display: none;
+}
 
 .checkbox-style {
     width: 13px;
