@@ -20,15 +20,15 @@
     <header class="title-and-settings flex-container">
         <h1>Meme Generator</h1>
         <ul class="flex-container row-container">
-            <li class="is-hover is-cursor">
+            <li class="is-hover is-cursor" id="image-panel">
                 <i class="fa-solid fa-file-image"></i>
                 Image
             </li>
-            <li class="is-hover is-cursor">
+            <li class="is-hover is-cursor" id="text-panel">
                 <i class="fa-solid fa-a"></i>
                 Text
             </li>
-            <li class="is-hover is-cursor">
+            <li class="is-hover is-cursor" id="mode-panel">
                 <i class="fa-regular fa-lightbulb"></i>
                 Dark mode
             </li>
@@ -55,16 +55,16 @@
         <form class="flex-container flex-start">
             <section class="url-container panel-settings">
                 <h5>URL</h5>
-                <label for="image-url"></label>
-                <input type="text" id="image-url" class="is-hover">
+                <label for="input-url"></label>
+                <input type="text" id="input-url" class="is-hover">
             </section>
             <section class="panel-settings">
                 <h5>BACKGROUND</h5>
                 <div class="color-n-style flex-container flex-start row-container">
                     <label class="relative-container">
-                        <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
+                        <input type="color" value="#FFFFFF" id="image-back" class="input-color"><span>#FFFFFF</span>
                     </label>
-                    <select name="filter" id="filter-select" class="is-hover is-cursor">
+                    <select name="filter" id="image-luminosity" class="is-hover is-cursor">
                         <option value="none">None</option>
                         <option value="lighten">Lighten</option>
                         <option value="darken">Darken</option>
@@ -96,7 +96,7 @@
                 <label for="negative-range">NEGATIVE</label>
                 <input type="range" class="slide-bar" id="negative-range" step="10" value="0">
             </section>
-            <button class="reset">Reset filters</button>
+            <button class="reset" id="button-reset">Reset filters</button>
         </form>
     </aside>
     <!------ Text settings form ------->
@@ -107,7 +107,7 @@
                     <h5>TOP</h5>
                     <textarea name="top-text" id="top-text" rows="2" class="is-hover">TOP TEXT</textarea>
                     <div class="flex-container row-container">
-                        <input type="checkbox" id="check-top-text" class="checkbox-style">
+                        <input type="checkbox" id="disable-top-text" class="checkbox-style">
                         <label for="check-top-text" class="label-checkbox">Without top text</label>
                     </div>
                 </section>
@@ -115,7 +115,7 @@
                     <h5>BOTTOM</h5>
                     <textarea name="bottom-text" id="bottom-text" rows="2" class="is-hover">BOTTOM TEXT</textarea>
                     <div class="flex-container row-container">
-                        <input type="checkbox" id="check-bottom-text" class="checkbox-style">
+                        <input type="checkbox" id="disable-bottom-text" class="checkbox-style">
                         <label for="check-bottom-text" class="label-checkbox">Without bottom text</label>
                     </div>
                 </section>
@@ -134,16 +134,16 @@
                         <option value="timesnew">Times New Roman</option>
                     </select>
                     <div class="font-container flex-container row-container between-container">
-                        <input type="number" value="40" class="is-hover">
+                        <input type="number" value="40" class="is-hover" id="font-size">
                     <section class="button-container flex-container row-container between-container">
-                        <button class="justify-button is-hover is-cursor">
+                        <button class="justify-button is-hover is-cursor" id="align-left">
                             <i class="fa-solid fa-align-left"></i>
                         </button>
-                        <button class="justify-button is-hover is-cursor">
+                        <button class="justify-button is-hover is-cursor" id="align-center">
                             <i class="fa-solid fa-align-center"></i>
                         </button>
-                        <button class="justify-button is-hover is-cursor">
-                            <i class="fa-solid fa-align-left"></i>
+                        <button class="justify-button is-hover is-cursor" id="align-right">
+                            <i class="fa-solid fa-align-right"></i>
                         </button>
                     </section>
                     </div>
@@ -153,36 +153,36 @@
                     <div class="flex-container between-container">
                         <h5>COLOR</h5>
                         <label class="relative-container">
-                            <input type="color" value="#00000" id="color-select" class="input-color"><span>#000000</span>
+                            <input type="color" value="#00000" id="font-color" class="input-color"><span>#000000</span>
                         </label>
                     </div>
                     <div class="flex-container background-letter">
                         <h5>BACKGROUND</h5>
                         <label class="relative-container">
-                            <input type="color" value="#FFFFFF" id="color-select" class="input-color"><span>#FFFFFF</span>
+                            <input type="color" value="#FFFFFF" id="font-background" class="input-color"><span>#FFFFFF</span>
                         </label>
                     </div>
                 </div>
                 <div class="flex-container row-container">
-                    <input type="checkbox" id="check-back-text" class="checkbox-style">
-                    <label for="check-back-text" class="label-checkbox">Transparent background</label>
+                    <input type="checkbox" id="disable-font-background" class="checkbox-style">
+                    <label for="disable-font-background" class="label-checkbox">Transparent background</label>
                 </div>
                 </section>
                 <section class="panel-settings">
                     <h5>BORDER</h5>
                     <div class="button-container flex-container row-container between-container">
-                        <button class="justify-button is-hover is-cursor">None</button>
-                        <button class="justify-button is-hover is-cursor">Light</button>
-                        <button class="justify-button is-hover is-cursor">Dark</button>
+                        <button class="justify-button is-hover is-cursor" id="border-none">None</button>
+                        <button class="justify-button is-hover is-cursor" id="border-light">Light</button>
+                        <button class="justify-button is-hover is-cursor" id="border-dark">Dark</button>
                     </div>
                 </section>
                 <section class="panel-settings">
                     <label for="space-letters">SPACING</label>
-                    <input type="number" value="35" id="space-letters" class="is-hover">
+                    <input type="number" value="35" id="font-spacing" class="is-hover">
                 </section>
                 <section class="panel-settings">
                     <label for="leading-letters">LEADING</label>
-                    <select name="leading" id="leading-letters" class="is-hover">
+                    <select name="leading" id="font-leading" class="is-hover">
                         <option value="0.8">0.8</option>
                         <option value="1">1</option>
                         <option value="1.2" selected>1.2</option>
