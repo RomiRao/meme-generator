@@ -88,7 +88,7 @@ filterInvert.addEventListener('input', () => filters());
 //Reset button
 
 const deleteFilters = () => {
-    imageContainer.style.filter = `brightness(0) opacity(0) blur(0px) contrast(0%) grayscale(0%) hue-rotate(0deg) sepia(0%) saturate(0%) invert(0)`;
+    imageContainer.style.filter = `brightness(1) opacity(1) blur(0px) contrast(100%) grayscale(0%) hue-rotate(0deg) sepia(0%) saturate(100%) invert(0)`;
 }
 
 buttonReset.addEventListener('click', () => deleteFilters())
