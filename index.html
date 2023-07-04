@@ -20,15 +20,15 @@
     <header class="title-and-settings flex-container">
         <h1>Meme Generator</h1>
         <ul class="flex-container row-container">
-            <li class="is-hover is-cursor" id="image-panel">
+            <li class="is-hover is-cursor" id="image-panel-button">
                 <i class="fa-solid fa-file-image"></i>
                 Image
             </li>
-            <li class="is-hover is-cursor" id="text-panel">
+            <li class="is-hover is-cursor" id="text-panel-button">
                 <i class="fa-solid fa-a"></i>
                 Text
             </li>
-            <li class="is-hover is-cursor" id="mode-panel">
+            <li class="is-hover is-cursor" id="mode-panel-button">
                 <i class="fa-regular fa-lightbulb"></i>
                 Dark mode
             </li>
@@ -50,7 +50,7 @@
     </main>
     <!-------- Settings to apply to the image ------->
     <!-- Image settings form -->
-    <aside class="image-settings flex-container">
+    <aside class="image-settings flex-container" id="image-panel-button">
         <h3>IMAGE</h3>
         <form class="flex-container flex-start">
             <section class="url-container panel-settings">
@@ -100,7 +100,7 @@
 
     </aside>
     <!------ Text settings form ------->
-    <aside class="text-settings flex-container">
+    <aside class="text-settings flex-container hidden" id="text-panel">
             <h3>TEXT</h3>
             <form class="flex-container flex-start">
                 <section class="panel-settings">

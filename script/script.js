@@ -1,9 +1,9 @@
 // ------------ CALLING ELEMENTS ----------------
 
 // Panel settings ------
-const imagePanel = document.getElementById('image-panel');
-const textPanel = document.getElementById('text-panel');
-const modePanel = document.getElementById('mode-panel');
+const imagePanelButton = document.getElementById('image-panel-button');
+const textPanelButton = document.getElementById('text-panel-button');
+const modePanelButton = document.getElementById('mode-panel-button');
 
 //Meme container and download button elements
 const topText = document.getElementById('top-text-cont');
@@ -15,6 +15,9 @@ const memeContainer = document.getElementById('meme-container');
 
 
 //Image panel -------------
+const imagePanel = document.getElementById('image-panel');
+
+//Image
 const inputURL = document.getElementById('input-url');
 const inputImageBack = document.getElementById('image-back');
 const inputBlendMode = document.getElementById('image-blend');
@@ -33,6 +36,8 @@ const buttonReset = document.getElementById('button-reset');
 
 
 //Text panel ----------
+const textPanel = document.getElementById('text-panel');
+
 //Text inputs
 const inputTopText = document.getElementById('top-text');
 const disableTopText = document.getElementById('disable-top-text');
@@ -63,6 +68,17 @@ const fontLeading = document.getElementById('font-leading');
 
 
 //-------------- FUNCTIONS -------------------
+
+//Hide and show panels
+imagePanelButton.addEventListener('click', () => {
+    imagePanel.classList.remove('hidden');
+    textPanel.classList.add('hidden');
+});
+
+textPanelButton.addEventListener('click', () => {
+    textPanel.classList.remove('hidden');
+    imagePanel.classList.add('hidden');
+});
 
 
 //Download image
@@ -241,4 +257,3 @@ fontLeading.addEventListener('input', () => {
     topText.style.lineHeight = fontLeading.value;
     bottomText.style.lineHeight = fontLeading.value;
 });
-
