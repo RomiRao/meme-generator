@@ -5,6 +5,13 @@ const imagePanel = document.getElementById('image-panel');
 const textPanel = document.getElementById('text-panel');
 const modePanel = document.getElementById('mode-panel');
 
+//Meme container and download button elements
+const topText = document.getElementById('top-text-cont');
+const bottomText = document.getElementById('bottom-text-cont');
+const imageContainer = document.getElementById('image-container');
+
+const download = document.getElementById('download-button');
+
 //Image panel -------------
 const inputURL = document.getElementById('input-url');
 const inputImageBack = document.getElementById('image-back');
