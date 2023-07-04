@@ -134,6 +134,7 @@ div {
     background-color: #252935;
     position: absolute;
     width: 246px;
+    height: 100%;
     right: 0;
     top: 0;
     justify-content: flex-start;
