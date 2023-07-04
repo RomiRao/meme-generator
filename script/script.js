@@ -15,7 +15,7 @@ const download = document.getElementById('download-button');
 //Image panel -------------
 const inputURL = document.getElementById('input-url');
 const inputImageBack = document.getElementById('image-back');
-const inputLuminosity = document.getElementById('image-luminosity');
+const inputBlendMode = document.getElementById('image-blend');
 
 //filters
 const filterBrightness = document.getElementById('bright-range');
@@ -67,6 +67,16 @@ const fontLeading = document.getElementById('font-leading');
 inputURL.addEventListener('input', () => {
     imageContainer.style.backgroundImage = `url('${inputURL.value}')`
 });
+
+//Background color/blend mode image
+
+inputImageBack.addEventListener('input', () => {
+    imageContainer.style.backgroundColor = inputImageBack.value
+});
+
+inputBlendMode.addEventListener('input', () => {
+    imageContainer.style.backgroundBlendMode = inputBlendMode.value
+})
 
 //Filters functions
 
