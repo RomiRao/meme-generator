@@ -70,8 +70,11 @@ inputURL.addEventListener('input', () => {
 
 //Background color/blend mode image
 
+let colorNameImage = document.getElementById('color-name-image');
+
 inputImageBack.addEventListener('input', () => {
     imageContainer.style.backgroundColor = inputImageBack.value
+    colorNameImage.innerText = inputImageBack.value.toUpperCase()
 });
 
 inputBlendMode.addEventListener('input', () => {
