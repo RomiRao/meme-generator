@@ -62,6 +62,10 @@ const fontLeading = document.getElementById('font-leading');
 
 //-------------- FUNCTIONS -------------------
 
+//
+//IMAGE PANEL
+//
+
 //Adding image to container by url
 
 inputURL.addEventListener('input', () => {
@@ -104,4 +108,19 @@ const deleteFilters = () => {
     imageContainer.style.filter = `brightness(1) opacity(1) blur(0px) contrast(100%) grayscale(0%) hue-rotate(0deg) sepia(0%) saturate(100%) invert(0)`;
 }
 
-buttonReset.addEventListener('click', () => deleteFilters())
+buttonReset.addEventListener('click', () => deleteFilters());
+
+// 
+//TEXT PANEL
+//
+
+//Top text input
+
+inputTopText.addEventListener('input', () => {
+    topText.innerText = inputTopText.value
+});
+
+//Bottom text input
+inputBottomText.addEventListener('input', () => {
+    bottomText.innerHTML = inputBottomText.value
+});
