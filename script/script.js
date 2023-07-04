@@ -11,6 +11,8 @@ const bottomText = document.getElementById('bottom-text-cont');
 const imageContainer = document.getElementById('image-container');
 
 const download = document.getElementById('download-button');
+const memeContainer = document.getElementById('meme-container');
+
 
 //Image panel -------------
 const inputURL = document.getElementById('input-url');
@@ -61,6 +63,20 @@ const fontLeading = document.getElementById('font-leading');
 
 
 //-------------- FUNCTIONS -------------------
+
+
+//Download image
+
+//a.download = true;
+//a.target = '_blank';
+//a.href= source;
+
+//a.click();
+
+download.addEventListener('click', () => {
+    download.download = true
+    download.href = memeContainer
+});
 
 //
 //IMAGE PANEL
@@ -225,3 +241,4 @@ fontLeading.addEventListener('input', () => {
     topText.style.lineHeight = fontLeading.value;
     bottomText.style.lineHeight = fontLeading.value;
 });
+
