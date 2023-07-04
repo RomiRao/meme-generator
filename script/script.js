@@ -150,3 +150,16 @@ fontSize.addEventListener('input', () => {
     topText.style.fontSize = `${fontSize.value}px`;
     bottomText.style.fontSize = `${fontSize.value}px`;
 });
+
+alignLeft.addEventListener('click', () => {
+    topText.style.textAlign = 'left' ;
+    bottomText.style.textAlign = 'left';
+});
+alignCenter.addEventListener('click', () => {
+    topText.style.textAlign = 'center' ;
+    bottomText.style.textAlign = 'center';
+});
+alignRight.addEventListener('click', () => {
+    topText.style.textAlign = 'right' ;
+    bottomText.style.textAlign = 'right';
+});
