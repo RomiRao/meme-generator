@@ -115,12 +115,27 @@ buttonReset.addEventListener('click', () => deleteFilters());
 //
 
 //Top text input
-
 inputTopText.addEventListener('input', () => {
     topText.innerText = inputTopText.value
+});
+
+disableTopText.addEventListener('click', () => {
+    if (disableTopText.checked) {
+        topText.classList.add('hidden')
+    } else {
+        topText.classList.remove('hidden')
+    }
 });
 
 //Bottom text input
 inputBottomText.addEventListener('input', () => {
     bottomText.innerHTML = inputBottomText.value
+});
+
+disableBottomText.addEventListener('click', () => {
+    if (disableBottomText.checked) {
+        bottomText.classList.add('hidden')
+    } else {
+        bottomText.classList.remove('hidden')
+    }
 });
