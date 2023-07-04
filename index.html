@@ -74,8 +74,9 @@
                     </select>
                 </div>
             </section>
+        </form>
     <!----- Filters sliders ------>
-    <section class="panel-settings">
+    <form class="panel-settings">
                 <h5>FILTERS</h5>
                 <label for="bright-range">BRIGHTNESS</label>
                 <input type="range" class="slide-bar" id="bright-range" min="0" max="1" step="0.1" value="1">
@@ -94,10 +95,10 @@
                 <label for="saturation-range">SATURATION</label>
                 <input type="range" class="slide-bar" id="saturation-range" min="100" max="1000" step="10" value="100">
                 <label for="invert-range">INVERT</label>
-                <input type="range" class="slide-bar" id="invert-range" min="0" max="1" step="0.1" value="1">
-            </section>
-            <input type="reset" class="reset is-hover is-cursor" id="button-reset" value="Reset filters">
-        </form>
+                <input type="range" class="slide-bar" id="invert-range" min="0" max="1" step="0.1" value="0">
+                <input type="reset" class="reset is-hover is-cursor" id="button-reset" value="Reset filters">
+            </form>
+
     </aside>
     <!------ Text settings form ------->
     <aside class="text-settings flex-container">

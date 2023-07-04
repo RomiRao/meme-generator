@@ -22,11 +22,11 @@ const filterBrightness = document.getElementById('bright-range');
 const filterOpacity = document.getElementById('opacity-range');
 const filterContrast = document.getElementById('contrast-range');
 const filterBlur = document.getElementById('blur-range');
-const filterGrayscale = document.getElementById('grayscale-range');
+const filterGrayscale = document.getElementById('gray-range');
 const filterSepia = document.getElementById('sepia-range');
 const filterHue = document.getElementById('hue-range');
 const filterSaturation = document.getElementById('saturation-range');
-const filterNegative = document.getElementById('invert-range');
+const filterInvert = document.getElementById('invert-range');
 const buttonReset = document.getElementById('button-reset');
 
 
@@ -66,4 +66,29 @@ const fontLeading = document.getElementById('font-leading');
 
 inputURL.addEventListener('input', () => {
     imageContainer.style.backgroundImage = `url('${inputURL.value}')`
-})
+});
+
+//Filters functions
+
+const filters = () => {
+    imageContainer.style.filter = `brightness(${filterBrightness.value}) opacity(${filterOpacity.value}) blur(${filterBlur.value}px) contrast(${filterContrast.value}%) grayscale(${filterGrayscale.value}%) hue-rotate(${filterHue.value}deg) sepia(${filterSepia.value}%) saturate(${filterSaturation.value}%) invert(${filterInvert.value})`
+}
+
+filterBrightness.addEventListener('input', () => filters());
+filterOpacity.addEventListener('input', () => filters());
+filterContrast.addEventListener('input', () => filters());
+filterBlur.addEventListener('input', () => filters());
+filterGrayscale.addEventListener('input', () => filters());
+filterSepia.addEventListener('input', () => filters());
+filterHue.addEventListener('input', () => filters());
+filterSaturation.addEventListener('input', () => filters());
+filterInvert.addEventListener('input', () => filters());
+
+
+//Reset button
+
+const deleteFilters = () => {
+    imageContainer.style.filter = `brightness(0) opacity(0) blur(0px) contrast(0%) grayscale(0%) hue-rotate(0deg) sepia(0%) saturate(0%) invert(0)`;
+}
+
+buttonReset.addEventListener('click', () => deleteFilters())

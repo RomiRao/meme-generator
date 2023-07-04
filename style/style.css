@@ -143,8 +143,9 @@ h5, label, input[type='range'] {
 form {
     height: 100%;
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
 }
+
 
 .panel-settings {
     width: 100%;
@@ -235,6 +236,7 @@ input[type="color"]::-webkit-color-swatch {
 
 .reset {
     width: 70%;
+    margin: 15px 0;
 }
 
 /* ASIDE/TEXT SETTINGS -------------------------------------*/
