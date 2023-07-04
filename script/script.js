@@ -55,7 +55,7 @@ const borderLight = document.getElementById('border-light');
 const borderDark = document.getElementById('border-dark');
 
 //Spacing and leading ----
-const fontSpacing = document.getElementById('font-spacing');
+const fontPadding = document.getElementById('font-spacing');
 const fontLeading = document.getElementById('font-leading');
 
 
@@ -197,14 +197,27 @@ disableFontBack.addEventListener('click', () => {
 borderNone.addEventListener('click', () => {
     topText.style.textShadow = 'none';
     bottomText.style.textShadow = 'none';
-})
+});
 
 borderLight.addEventListener('click', () => {
     topText.style.textShadow = 'rgb(255, 255, 255) 2px 2px, rgb(255, 255, 255) -2px 2px, rgb(255, 255, 255) 2px -2px, rgb(255, 255, 255) -2px -2px';
     bottomText.style.textShadow = 'rgb(255, 255, 255) 2px 2px, rgb(255, 255, 255) -2px 2px, rgb(255, 255, 255) 2px -2px, rgb(255, 255, 255) -2px -2px';
-})
+});
 
 borderDark.addEventListener('click', () => {
     topText.style.textShadow = 'rgb(0, 0, 0) 2px 2px, rgb(0, 0, 0) -2px 2px, rgb(0, 0, 0) 2px -2px, rgb(0, 0, 0) -2px -2px';
     bottomText.style.textShadow = 'rgb(0, 0, 0) 2px 2px, rgb(0, 0, 0) -2px 2px, rgb(0, 0, 0) 2px -2px, rgb(0, 0, 0) -2px -2px';
-})
+});
+
+
+//Text padding
+fontPadding.addEventListener('input', () => {
+    topText.style.padding = `${fontPadding.value}px 30px`;
+    bottomText.style.padding = `${fontPadding.value}px 30px`;
+});
+
+//Text leading line-height
+fontLeading.addEventListener('input', () => {
+    topText.style.lineHeight = fontLeading.value;
+    bottomText.style.lineHeight = fontLeading.value;
+});
