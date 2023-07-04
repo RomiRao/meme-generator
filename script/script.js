@@ -163,3 +163,32 @@ alignRight.addEventListener('click', () => {
     topText.style.textAlign = 'right' ;
     bottomText.style.textAlign = 'right';
 });
+
+
+//Text colors
+const colorText = document.getElementById('color-text');
+const textBackground = document.getElementById('color-text-background');
+
+
+fontColor.addEventListener('input', () => {
+    topText.style.color = fontColor.value
+    bottomText.style.color = fontColor.value
+    colorText.innerText = fontColor.value.toUpperCase()
+});
+
+fontBackground.addEventListener('input', () => {
+    topText.style.backgroundColor = fontBackground.value
+    bottomText.style.backgroundColor = fontBackground.value
+    textBackground.innerText = fontBackground.value.toUpperCase()
+});
+
+// disableFontBack
+disableFontBack.addEventListener('click', () => {
+    if (disableFontBack.checked) {
+        bottomText.style.backgroundColor = 'transparent'
+        topText.style.backgroundColor = 'transparent'
+    } else {
+        topText.style.backgroundColor = fontBackground.value
+        bottomText.style.backgroundColor = fontBackground.value
+    }
+});
