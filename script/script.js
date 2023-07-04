@@ -192,3 +192,19 @@ disableFontBack.addEventListener('click', () => {
         bottomText.style.backgroundColor = fontBackground.value
     }
 });
+
+//Text border
+borderNone.addEventListener('click', () => {
+    topText.style.textShadow = 'none';
+    bottomText.style.textShadow = 'none';
+})
+
+borderLight.addEventListener('click', () => {
+    topText.style.textShadow = 'rgb(255, 255, 255) 2px 2px, rgb(255, 255, 255) -2px 2px, rgb(255, 255, 255) 2px -2px, rgb(255, 255, 255) -2px -2px';
+    bottomText.style.textShadow = 'rgb(255, 255, 255) 2px 2px, rgb(255, 255, 255) -2px 2px, rgb(255, 255, 255) 2px -2px, rgb(255, 255, 255) -2px -2px';
+})
+
+borderDark.addEventListener('click', () => {
+    topText.style.textShadow = 'rgb(0, 0, 0) 2px 2px, rgb(0, 0, 0) -2px 2px, rgb(0, 0, 0) 2px -2px, rgb(0, 0, 0) -2px -2px';
+    bottomText.style.textShadow = 'rgb(0, 0, 0) 2px 2px, rgb(0, 0, 0) -2px 2px, rgb(0, 0, 0) 2px -2px, rgb(0, 0, 0) -2px -2px';
+})
