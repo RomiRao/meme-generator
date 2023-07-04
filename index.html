@@ -79,23 +79,23 @@
     <section class="panel-settings">
                 <h5>FILTERS</h5>
                 <label for="bright-range">BRIGHTNESS</label>
-                <input type="range" class="slide-bar" id="bright-range" step="10" value="100">
+                <input type="range" class="slide-bar" id="bright-range" min="0" max="1" step="0.1" value="1">
                 <label for="opacity-range">OPACITY</label>
-                <input type="range" class="slide-bar" id="opacity-range" step="10" value="100">
+                <input type="range" class="slide-bar" id="opacity-range" min="0" max="1" step="0.1" value="1">
                 <label for="contrast-range">CONTRAST</label>
-                <input type="range" class="slide-bar" id="contrast-range" value="0">
+                <input type="range" class="slide-bar" id="contrast-range" min="100" max="1000" step="1" value="100">
                 <label for="blur-range">BLUR</label>
-                <input type="range" class="slide-bar" id="blur-range" value="0">
+                <input type="range" class="slide-bar" id="blur-range" min="0" max="10" step="0.1" value="0">
                 <label for="gray-range">GRAYSCALE</label>
-                <input type="range" class="slide-bar" id="gray-range" value="0">
+                <input type="range" class="slide-bar" id="gray-range" min="0" max="100" step="1" value="0">
                 <label for="sepia-range">SEPIA</label>
-                <input type="range" class="slide-bar" id="sepia-range" value="0">
+                <input type="range" class="slide-bar" id="sepia-range" min="0" max="100" step="1" value="0">
                 <label for="hue-range">HUE</label>
-                <input type="range" class="slide-bar" id="hue-range" value="0">
+                <input type="range" class="slide-bar" id="hue-range" min="0" max="359" step="1" value="0">
                 <label for="saturation-range">SATURATION</label>
-                <input type="range" class="slide-bar" id="saturation-range" value="0">
-                <label for="negative-range">NEGATIVE</label>
-                <input type="range" class="slide-bar" id="negative-range" step="10" value="0">
+                <input type="range" class="slide-bar" id="saturation-range" min="100" max="1000" step="10" value="100">
+                <label for="invert-range">INVERT</label>
+                <input type="range" class="slide-bar" id="invert-range" min="0" max="1" step="0.1" value="1">
             </section>
             <button class="reset" id="button-reset">Reset filters</button>
         </form>

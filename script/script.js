@@ -26,7 +26,7 @@ const filterGrayscale = document.getElementById('grayscale-range');
 const filterSepia = document.getElementById('sepia-range');
 const filterHue = document.getElementById('hue-range');
 const filterSaturation = document.getElementById('saturation-range');
-const filterNegative = document.getElementById('negative-range');
+const filterNegative = document.getElementById('invert-range');
 const buttonReset = document.getElementById('button-reset');
 
 
