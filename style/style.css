@@ -86,6 +86,7 @@ main {
 .image-container {
     width: 100%;
     flex-grow: 1;
+    justify-content: space-between;
 }
 
 .meme-text {
