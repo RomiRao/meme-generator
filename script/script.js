@@ -145,3 +145,8 @@ fontSelector.addEventListener('input', () => {
     topText.style.fontFamily = fontSelector.value
     bottomText.style.fontFamily = fontSelector.value
 });
+
+fontSize.addEventListener('input', () => {
+    topText.style.fontSize = `${fontSize.value}px`;
+    bottomText.style.fontSize = `${fontSize.value}px`;
+});
