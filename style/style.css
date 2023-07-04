@@ -228,6 +228,12 @@ input[type="color"]::-webkit-color-swatch {
     border-radius: 70%;
 }
 
+/* Reset button */
+
+.reset {
+    width: 70%;
+}
+
 /* ASIDE/TEXT SETTINGS -------------------------------------*/
 
 .text-settings {
