@@ -57,3 +57,13 @@ const borderDark = document.getElementById('border-dark');
 //Spacing and leading ----
 const fontSpacing = document.getElementById('font-spacing');
 const fontLeading = document.getElementById('font-leading');
+
+
+
+//-------------- FUNCTIONS -------------------
+
+//Adding image to container by url
+
+inputURL.addEventListener('input', () => {
+    imageContainer.style.backgroundImage = `url('${inputURL.value}')`
+})
