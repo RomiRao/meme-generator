@@ -129,7 +129,7 @@ disableTopText.addEventListener('click', () => {
 
 //Bottom text input
 inputBottomText.addEventListener('input', () => {
-    bottomText.innerHTML = inputBottomText.value
+    bottomText.innerText = inputBottomText.value
 });
 
 disableBottomText.addEventListener('click', () => {
