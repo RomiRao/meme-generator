@@ -187,9 +187,13 @@ disableFontBack.addEventListener('click', () => {
     if (disableFontBack.checked) {
         bottomText.style.backgroundColor = 'transparent'
         topText.style.backgroundColor = 'transparent'
+        bottomText.style.position = 'absolute'
+        topText.style.position = 'absolute'
     } else {
         topText.style.backgroundColor = fontBackground.value
         bottomText.style.backgroundColor = fontBackground.value
+        bottomText.style.position = 'static'
+        topText.style.position = 'static'
     }
 });
 

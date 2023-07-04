@@ -81,6 +81,7 @@ main {
     height: 100vmin;
     max-height: 600px;
     flex-grow: 1;
+    position: relative;
 }
 
 .image-container {
@@ -101,6 +102,14 @@ main {
     text-align: center;
     padding: 35px 30px;
     background-color: white;
+}
+
+#top-text-cont {
+    top: 0;
+}
+
+#bottom-text-cont {
+    bottom: 0;
 }
 
 .download-section {
