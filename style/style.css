@@ -296,7 +296,11 @@ input[type="color"]::-webkit-color-swatch {
     background-color: rgb(30, 164, 30);
 }
 
-/* LIGHT MODE JS */
+/********************
+        JS CHANGES
+**********************/
+
+/* LIGHT MODE */
 
 .body-light-m {
     color: #676683;
@@ -318,6 +322,12 @@ input[type="color"]::-webkit-color-swatch {
 
 .light-slide-bar::-webkit-slider-thumb {
     background-color: #C9ADBF;
+}
+
+/* Hide panels */
+
+.hidden {
+    display: none;
 }
 
 /* MEDIA QUERIES*/
