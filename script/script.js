@@ -70,6 +70,9 @@ const fontLeading = document.getElementById('font-leading');
 //-------------- FUNCTIONS -------------------
 
 //Hide and show panels
+const closeButtonImage = document.getElementById('close-image-button');
+const closeButtonText = document.getElementById('close-text-button');
+
 imagePanelButton.addEventListener('click', () => {
     imagePanel.classList.remove('hidden');
     textPanel.classList.add('hidden');
@@ -80,6 +83,13 @@ textPanelButton.addEventListener('click', () => {
     imagePanel.classList.add('hidden');
 });
 
+closeButtonImage.addEventListener('click', () => {
+    imagePanel.classList.toggle('hidden');
+})
+
+closeButtonText.addEventListener('click', () => {
+    textPanel.classList.toggle('hidden');
+})
 
 //Download image
 downloadButton.addEventListener('click', () => downloadMeme());

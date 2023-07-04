@@ -140,8 +140,14 @@ div {
     justify-content: flex-start;
 }
 
-h3 {
-    margin: 30px 0 0;
+.x-button-container {
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.fa-xmark {
+    padding: 5px 7px;
+    border-radius: 3px;
 }
 
 h5, label, input[type='range'] {
@@ -336,6 +342,17 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 /* MEDIA QUERIES*/
+
+/* @media(max-width:1300px) {
+
+    .text-settings, .image-settings {
+        display: none;
+    }
+
+    .show-panel {
+        display: flex;
+    }
+} */
 
 @media(max-width:700px) {
 
