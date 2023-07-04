@@ -195,7 +195,7 @@ form button {
     margin-top: 20px
 }
 
-span {
+.color-span {
     font-size: 13px;
     position: absolute;
     top: 9px;

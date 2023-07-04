@@ -10,7 +10,7 @@ const topText = document.getElementById('top-text-cont');
 const bottomText = document.getElementById('bottom-text-cont');
 const imageContainer = document.getElementById('image-container');
 
-const download = document.getElementById('download-button');
+const downloadButton = document.getElementById('download-button');
 const memeContainer = document.getElementById('meme-container');
 
 
@@ -82,17 +82,18 @@ textPanelButton.addEventListener('click', () => {
 
 
 //Download image
+downloadButton.addEventListener('click', () => downloadMeme());
 
-//a.download = true;
-//a.target = '_blank';
-//a.href= source;
-
-//a.click();
-
-download.addEventListener('click', () => {
-    download.download = true
-    download.href = memeContainer
-});
+const downloadMeme = () => {
+// Crear un elemento <a>
+let enlace = document.createElement('a');
+// El título
+enlace.download = "Canvas como imagen.jpg";
+// Convertir la imagen a Base64 y ponerlo en el enlace
+enlace.href = memeContainer.toDataURL("image/jpeg", 1);
+// Hacer click en él
+enlace.click();
+}
 
 //
 //IMAGE PANEL
@@ -257,3 +258,108 @@ fontLeading.addEventListener('input', () => {
     topText.style.lineHeight = fontLeading.value;
     bottomText.style.lineHeight = fontLeading.value;
 });
+
+
+//***********************************************
+//Light MODE
+//***********************************************
+
+const darkModeIcon = document.getElementById('dark-mode-icon');
+const body = document.getElementById('body');
+const header = document.getElementById('header');
+const darkModeSpan = document.getElementById('dark-mode-span')
+
+const modoOscuro = () => {
+    //general light mode
+    body.classList.toggle('body-light-m');
+    header.classList.toggle('header-light-m');
+    imagePanel.classList.toggle('aside-light-m');
+    textPanel.classList.toggle('aside-light-m');
+    darkModeIcon.classList.toggle('fa-solid');
+    darkModeIcon.classList.toggle('fa-regular');
+    modePanelButton.classList.toggle('is-light-hover');
+    imagePanelButton.classList.toggle('is-light-hover');
+    textPanelButton.classList.toggle('is-light-hover');
+    
+    if (darkModeSpan.innerText == 'Dark mode') {
+        darkModeSpan.innerText = 'Light mode'
+    } else {
+        darkModeSpan.innerText = 'Dark mode'
+    }
+
+    //filters light mode
+    filterBrightness.classList.toggle('light-slide-bar');
+    filterOpacity.classList.toggle('light-slide-bar');
+    filterContrast.classList.toggle('light-slide-bar');
+    filterBlur.classList.toggle('light-slide-bar');
+    filterGrayscale.classList.toggle('light-slide-bar');
+    filterSepia.classList.toggle('light-slide-bar');
+    filterHue.classList.toggle('light-slide-bar');
+    filterSaturation.classList.toggle('light-slide-bar');
+    filterInvert.classList.toggle('light-slide-bar');
+    buttonReset.classList.toggle('input-light-m');
+    buttonReset.classList.toggle('is-light-hover');
+    
+
+    //Inputs light mode
+//image
+    inputURL.classList.toggle('input-light-m');
+    inputImageBack.classList.toggle('input-light-m');
+    inputBlendMode.classList.toggle('input-light-m');
+    //hover
+    inputURL.classList.toggle('is-light-hover');
+    inputImageBack.classList.toggle('is-light-hover');
+    inputBlendMode.classList.toggle('is-light-hover');
+
+//Text
+    inputTopText.classList.toggle('input-light-m');
+    disableTopText.classList.toggle('input-light-m');
+    inputBottomText.classList.toggle('input-light-m');
+    disableBottomText.classList.toggle('input-light-m');
+    //hover
+    inputTopText.classList.toggle('is-light-hover');
+    disableTopText.classList.toggle('is-light-hover');
+    inputBottomText.classList.toggle('is-light-hover');
+    disableBottomText.classList.toggle('is-light-hover');
+
+//Font inputs
+    fontSelector.classList.toggle('input-light-m');
+    fontSize.classList.toggle('input-light-m');
+    alignLeft.classList.toggle('input-light-m');
+    alignCenter.classList.toggle('input-light-m');
+    alignRight.classList.toggle('input-light-m');
+    //hover
+    fontSelector.classList.toggle('is-light-hover');
+    fontSize.classList.toggle('is-light-hover');
+    alignLeft.classList.toggle('is-light-hover');
+    alignCenter.classList.toggle('is-light-hover');
+    alignRight.classList.toggle('is-light-hover');
+
+//Colors
+    fontColor.classList.toggle('input-light-m');
+    fontBackground.classList.toggle('input-light-m');
+    disableFontBack.classList.toggle('input-light-m');
+    //hover
+    fontColor.classList.toggle('is-light-hover');
+    fontBackground.classList.toggle('is-light-hover');
+    disableFontBack.classList.toggle('is-light-hover');
+
+//Border 
+    borderNone.classList.toggle('input-light-m');
+    borderLight.classList.toggle('input-light-m');
+    borderDark.classList.toggle('input-light-m');
+    //hover
+    borderNone.classList.toggle('is-light-hover');
+    borderLight.classList.toggle('is-light-hover');
+    borderDark.classList.toggle('is-light-hover');
+
+//Spacing and leading ----
+    fontPadding.classList.toggle('input-light-m');
+    fontLeading.classList.toggle('input-light-m');
+    //hover
+    fontPadding.classList.toggle('is-light-hover');
+    fontLeading.classList.toggle('is-light-hover');
+}
+    
+    modePanelButton.addEventListener('click', () => modoOscuro());
+

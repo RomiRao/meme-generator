@@ -15,9 +15,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="./style/icon.svg" sizes="195x195" style=" color: blue; font-size: 1.4em"/>
 </head>
 
-<body>
+<body id="body">
     <!------ Small header to present the project ----->
-    <header class="title-and-settings flex-container">
+    <header class="title-and-settings flex-container" id="header">
         <h1>Meme Generator</h1>
         <ul class="flex-container row-container">
             <li class="is-hover is-cursor" id="image-panel-button">
@@ -29,8 +29,8 @@
                 Text
             </li>
             <li class="is-hover is-cursor" id="mode-panel-button">
-                <i class="fa-regular fa-lightbulb"></i>
-                Dark mode
+                <i class="fa-regular fa-lightbulb" id="dark-mode-icon"></i>
+                <span id="dark-mode-span">Dark mode</span>
             </li>
         </ul>
     </header>
@@ -61,7 +61,7 @@
                 <h5>BACKGROUND</h5>
                 <div class="color-n-style flex-container flex-start row-container">
                     <label class="relative-container">
-                        <input type="color" value="#FFFFFF" id="image-back" class="input-color"><span id="color-name-image">#FFFFFF</span>
+                        <input type="color" value="#FFFFFF" id="image-back" class="input-color"><span class="color-span" id="color-name-image">#FFFFFF</span>
                     </label>
                     <select name="filter" id="image-blend" class="is-hover is-cursor">
                         <option value="unset">None</option>
@@ -153,13 +153,13 @@
                     <div class="flex-container between-container">
                         <h5>COLOR</h5>
                         <label class="relative-container">
-                            <input type="color" value="#00000" id="font-color" class="input-color"><span id="color-text">#000000</span>
+                            <input type="color" value="#00000" id="font-color" class="input-color"><span class="color-span" id="color-text">#000000</span>
                         </label>
                     </div>
                     <div class="flex-container background-letter">
                         <h5>BACKGROUND</h5>
                         <label class="relative-container">
-                            <input type="color" value="#FFFFFF" id="font-background" class="input-color"><span id="color-text-background">#FFFFFF</span>
+                            <input type="color" value="#FFFFFF" id="font-background" class="input-color"><span class="color-span" id="color-text-background">#FFFFFF</span>
                         </label>
                     </div>
                 </div>
