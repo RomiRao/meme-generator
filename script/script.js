@@ -83,7 +83,7 @@ inputImageBack.addEventListener('input', () => {
 
 inputBlendMode.addEventListener('input', () => {
     imageContainer.style.backgroundBlendMode = inputBlendMode.value
-})
+});
 
 //Filters functions
 
@@ -138,4 +138,10 @@ disableBottomText.addEventListener('click', () => {
     } else {
         bottomText.classList.remove('hidden')
     }
+});
+
+//Font selection
+fontSelector.addEventListener('input', () => {
+    topText.style.fontFamily = fontSelector.value
+    bottomText.style.fontFamily = fontSelector.value
 });
