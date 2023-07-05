@@ -148,6 +148,7 @@ div {
 .fa-xmark {
     padding: 5px 7px;
     border-radius: 3px;
+    display: none;
 }
 
 h5, label, input[type='range'] {
@@ -343,16 +344,13 @@ input[type="color"]::-webkit-color-swatch {
 
 /* MEDIA QUERIES*/
 
-/* @media(max-width:1300px) {
+@media(max-width:1300px) {
 
-    .text-settings, .image-settings {
-        display: none;
+    .fa-xmark {
+        display: block;
     }
 
-    .show-panel {
-        display: flex;
-    }
-} */
+}
 
 @media(max-width:700px) {
 
@@ -360,8 +358,12 @@ input[type="color"]::-webkit-color-swatch {
         font-size: 30px;
     }
 
+}
+
+@media(max-width:400px) {
+    
     .image-settings, .text-settings {
         width: 100%;
     }
+    
 }
-
