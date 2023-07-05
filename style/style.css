@@ -314,26 +314,39 @@ input[type="color"]::-webkit-color-swatch {
 
 /* LIGHT MODE */
 
-.body-light-m {
+.light-mode {
     color: #676683;
     background-color: #eddbda;
-}
 
-.header-light-m, .input-light-m, .light-slide-bar::-webkit-slider-runnable-track {
-    background-color: #ebe1e3;
-    color: #676683;
-}
+    .title-and-settings {
+        background-color: #ebe1e3;
+    }
 
-.aside-light-m {
-    background-color: #f6f2f2;
-}
+    .image-settings, .text-settings {
+        background-color: #f6f2f2;
+    }
 
-.is-light-hover:hover, .light-slide-bar:focus::-webkit-slider-runnable-track{
-    background-color: #e2c1ca;
-}
+    .image-settings input,.text-settings input, select, .input-color, form button, textarea {
+        background-color: #ebe1e3;
+        color: #676683;
+    }
 
-.light-slide-bar::-webkit-slider-thumb {
-    background-color: #C9ADBF;
+    .slide-bar::-webkit-slider-thumb {
+        background-color: #C9ADBF;
+    }
+
+    .slide-bar::-webkit-slider-runnable-track {
+        background-color:#ebe1e3;
+    }
+
+    .is-hover:hover {
+        background-color: #e2c1ca;
+    }
+
+    .slide-bar:focus::-webkit-slider-runnable-track {
+        background-color: #e2c1ca;
+    }
+
 }
 
 /* Hide panels */
