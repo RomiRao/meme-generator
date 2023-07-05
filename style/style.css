@@ -13,6 +13,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .flex-container {
@@ -134,7 +135,6 @@ div {
     background-color: #252935;
     position: absolute;
     width: 246px;
-    height: 100%;
     right: 0;
     top: 0;
     justify-content: flex-start;
@@ -365,5 +365,5 @@ input[type="color"]::-webkit-color-swatch {
     .image-settings, .text-settings {
         width: 100%;
     }
-    
+
 }
