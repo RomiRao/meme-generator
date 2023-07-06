@@ -13,7 +13,6 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .flex-container {
@@ -73,16 +72,17 @@ li i {
 
 main {
     flex-grow: 1;
+    height: 100%;
 }
 
 .meme-container {
     width: 90%;
     max-width: 600px;
     background-color: black;
-    height: 100vmin;
-    max-height: 600px;
     flex-grow: 1;
+    height: 600px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .image-container {
@@ -383,12 +383,25 @@ input[type="color"]::-webkit-color-swatch {
         font-size: 30px;
     }
 
+    .meme-text {
+        font-size: 6vw;
+        padding: 2%;
+    }
+
+    .meme-container {
+        height: 95vmin;
+
+    }
 }
 
 @media(max-width:400px) {
     
     .image-settings, .text-settings {
         width: 100%;
+    }
+
+    main {
+        padding-top: 20%;
     }
 
 }
