@@ -95,15 +95,8 @@ closeButtonText.addEventListener('click', () => {
 downloadButton.addEventListener('click', () => downloadMeme());
 
 const downloadMeme = () => {
-// Crear un elemento <a>
-let enlace = document.createElement('a');
-// El título
-enlace.download = "Canvas como imagen.jpg";
-// Convertir la imagen a Base64 y ponerlo en el enlace
-enlace.href = memeContainer.toDataURL("image/jpeg", 1);
-// Hacer click en él
-enlace.click();
-}
+    domtoimage.toBlob(memeContainer).then(function (blob) {window.saveAs(blob, "meme.png");});
+};
 
 //
 //IMAGE PANEL
