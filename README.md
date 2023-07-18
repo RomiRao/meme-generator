@@ -4,7 +4,7 @@
 
 Hey there! This is my second project. This time I'm doing a meme generator. The idea of this project is to work with js and document events. So, I applied the knowledge of HTML and CSS that I had from last couple of months plus JavaScript knowledge, to do a funny meme website.
 
-<a href="https://romirao.github.io/meme-generator/"> <img src="https://romirao.github.io/Portfolio-Romina/resources/romirao.github.io_Portfolio-Romina_.png" style="width: 50%;" alt="website example"/> </a>
+<a href="https://romirao.github.io/meme-generator/"> <img src="https://romirao.github.io/meme-generator/style/image-examples/meme-1.png" style="width: 650%;" alt="meme example"/> </a>
 
 ## Skills used
 
@@ -14,7 +14,7 @@ Hey there! This is my second project. This time I'm doing a meme generator. The 
 
 ### ✦ Header
 
-The header has a title and a list of buttons: Image: to display the image panel settings, Text: to display the text panel settings and Dark mode: to switch between light and dark mode.
+The header has a title and a list of buttons: _Image:_ to display the image panel settings, _Text:_ to display the text panel settings and _Dark mode:_ to switch between light and dark mode.
 
 ### ✦ Meme container
 
@@ -62,7 +62,7 @@ At the bottom of the page you have a green button, just need to press to downloa
 
 ## MEME EXAMPLES
 
-<img src="https://romirao.github.io/Portfolio-Romina/resources/img-projects/match-3.png" style="width: 25%;" alt="match-3 illustration"> <img src="https://romirao.github.io/Portfolio-Romina/resources/img-projects/meetings.png" style="width: 25%;" alt="meetings illustration"> <img src="https://romirao.github.io/Portfolio-Romina/resources/img-projects/portfolio.png" style="width: 25%;"  alt="portfolio illustration">
+<img src="https://romirao.github.io/meme-generator/style/image-examples/meme-2.png"" style="width: 27%;" alt="match-3 illustration"> <img src="https://romirao.github.io/meme-generator/style/image-examples/meme-3.png"" style="width: 27%;" alt="meetings illustration"> <img src="https://romirao.github.io/meme-generator/style/image-examples/meme-4.png"" style="width: 27%;" alt="portfolio illustration">
 
 ## RESOURCES
 
