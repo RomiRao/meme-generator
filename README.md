@@ -4,7 +4,7 @@
 
 Hey there! This is my second project. This time I'm doing a meme generator. The idea of this project is to work with js and document events. So, I applied the knowledge of HTML and CSS that I had from last couple of months plus JavaScript knowledge, to do a funny meme website.
 
-<a href="https://romirao.github.io/meme-generator/"> <img src="https://github.com/RomiRao/meme-generator/blob/main/style/image-examples/meme-1.png" style="width: 65%;" alt="meme example"/> </a>
+<a href="https://romirao.github.io/meme-generator/"> <img src="https://github.com/RomiRao/meme-generator/blob/main/style/image-examples/website.png" style="width: 60%;" alt="meme example"/> </a>
 
 ## Skills used
 
